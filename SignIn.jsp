@@ -19,22 +19,28 @@
 			<div class="col m6 offset-m3">
 				<div class="card">
 					<div class="card-content">
-						<h3 style="margin-top: 0px;" class="center-align">Register here</h3>
+						<h3 style="margin-top: 0px;" class="center-align">Sign In
+							Here</h3>
+						+
 
 						<h5 id="msg" class="center-align"></h5>
 
 						<div class="form center-align">
-							<form action="Registration" method="post" id="myform">
-								<input type="text" name="firstname" placeholder="Enter first name"> 
-								<input type="text" name="lastname" placeholder="Enter last name"> 
-								<input type="email" name="user_email" placeholder="Enter your email">
-								<input type="password" name="password" placeholder="Password">
-								<input type="password" name="password2" placeholder="Re-enter Password">
-
-								<button type="submit" class="btn #76ff03 light-green accent-3">Sign Up</button>
+							<form action="signinservlet" method="post" id="myform">
+								<input type="email" name="user_email"
+									placeholder="Username or email"> <input type="password"
+									name="password" placeholder="Password">
+								<button type="submit" class="btn #76ff03 light-green accent-3">Sign
+									In</button>
 							</form>
-							<p>By creating this account, you agree to our <a id="privacy" href="PrivacyPolicy.jsp">Privacy Policy</a>.</p>
-							<h6>Already have an account ? <a href="SignIn.jsp">Sign In</a></h6>
+							<p>
+								By creating this account, you agree to our <a id="privacy"
+									href="PrivacyPolicy.jsp">Privacy Policy</a>.
+							</p>
+							<br>
+							<h6>
+								Don't have any account ? <a href="Signup.jsp">Sign Up</a>
+							</h6>
 						</div>
 
 						<div class="loader center-align"
@@ -114,17 +120,15 @@
 			console.log(f);
 
 			$(".loader").show();
-			$(".form").hide();	
-			
+			$(".form").hide();
+
 			$.ajax({
-				url : "Registration",
+				url : "signinservlet",
 				data : f,
 				type : 'POST',
 				success : function(data, textStatus, errorThrown) {
 					console.log(data);
-					
 					console.log("success...");
-					
 					$(".loader").hide();
 					$(".form").show();
 
