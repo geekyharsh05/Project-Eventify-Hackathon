@@ -1,0 +1,405 @@
+/* General styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(229, 229, 229);
+}
+
+
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: max-content;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+
+
+}
+
+.search-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 36px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-button:active {
+
+  background-color: rgb(190, 190, 190);
+
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: rgb(101, 98, 98);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: #fff;
+  color: #222;
+  border-radius: 5px;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: lightsalmon;
+}
+
+#hero {
+  background-image: url("https://cdn.siasat.com/wp-content/uploads/2019/09/event.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2rem;
+  background-color: #f9bf31;
+  color: #fff;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.cta:hover {
+  background-color: #292f36;
+}
+
+/* Featured events section styles */
+#featured-events {
+  margin: 4rem auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 20px;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.event-card {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  flex-basis: 30%;
+
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 1rem;
+}
+
+.event-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-details p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-details .cta {
+  display: block;
+  background-color: #f9bf31;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+
+.event-details .cta:hover {
+  background-color: #292f36;
+}
+
+/* Main styles */
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .navbar-buttons {
+    display: block;
+    text-align: center;
+  }
+
+  .btn {
+    margin: 10px;
+  }
+}
+
+/* footer starts here */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.footer-content p {
+  font-size: 18px;
+}
+
+.footer-content ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-content li {
+  margin-left: 20px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* footer ends here */
+* {
+  box-sizing: border-box
+}
