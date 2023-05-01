@@ -1,4 +1,4 @@
-# Eventify Web App
+# 🌐 Eventify Web App
 
 This repo contains web-dev project of hackathon that was held by iNeuron.
 Eventify is a web application built using Java that allows users to create and manage events. With Eventify, users can create events, invite guests, send event updates, and track RSVPs.
